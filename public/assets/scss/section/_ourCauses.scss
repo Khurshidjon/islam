@@ -1,0 +1,103 @@
+/*===========================
+    Our Causes 
+===========================*/
+.our-causes{
+    background: $third-color;
+    span.title-separetor img{
+        background: $third-color;
+    }
+}
+.rise-amount{
+    display: $d-inblock;
+    font-weight: 800;
+    width: 50%;
+    padding: 10px;
+    background: $white;
+    border-right: 1px solid #ddd;
+    text-align: $t-center;
+    line-height: 1.6;
+}
+
+.rise-amount span{
+    display: $d-block;
+}
+.goal-amount {
+    width: 50%;
+    display: $d-block;
+    float: right;
+    padding: 10px;
+    font-weight: 800;
+    text-align: $t-center;
+    background: $white;
+    line-height: 1.6;
+}
+
+.goal-amount span {
+    display: $d-block;
+}
+.cause-right-top h4 {
+    text-transform: $upper;
+    margin-top: 0;
+}
+
+.cause-right-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+.cause-thumb {
+    position: relative;
+}
+
+.prog-item {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 5px;
+}
+.cause-right-social-icon {
+    display: $d-inblock;
+    float: right;
+}
+
+.cause-right-social-icon i {
+    font-size: 18px;
+    color: $base-color;
+}
+.cause-amount {
+    padding: 10px 0;
+    background: #fff;
+}
+.cause-right {
+    padding-top: 59px;
+    padding-bottom: 64px;
+}
+.single-causes-item {
+    margin-top: 50px;
+}
+.cause-wrapper{
+    margin-top: -50px;
+}
+.percentCount {
+    border: 2px solid $base-color;
+}
+
+.percentindicator {
+    border-top-color: $base-color;
+}
+
+.percentbox {
+    box-shadow: 0 0 0 5px $base-color;
+}
+.box-shadow-bottom {
+    height: 72px;
+    background: linear-gradient(to bottom, transparent 0%, #000 70%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.our-causes {
+    padding-top: 86px;
+    padding-bottom: 120px;
+}

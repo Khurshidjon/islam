@@ -1,0 +1,230 @@
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  border-top-right-radius: $radius;
+   border-top-left-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+     border-top-right-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+  border-bottom-right-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+     border-top-left-radius: $radius;
+}
+
+// BORDER RADIUS
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
+//placeholder
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $color;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: $color;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: $color;
+  }
+}
+
+//   transition 
+@mixin transition($transition){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+//transform
+@mixin transform($transform){
+    -ms-transform: $transform; /* IE 9 */
+    -webkit-transform: $transform; /* Chrome, Safari, Opera */
+    transform: $transform;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// translate rotate
+@mixin translate-rotate ($x, $y,$deg) {
+   @include transform(translate($x, $y)rotate(#{$deg}deg));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin rotate3d($vector-x: $default-vector-x, $vector-y: $default-vector-y, $vector-z: $default-vector-z, $rotate: $default-rotate, $perspective: false) {
+  $trans: rotate3d($vector-x, $vector-y, $vector-z, $rotate);
+  @if $perspective {
+    $trans: perspective($perspective) $trans;
+  }
+  
+}
+
+@mixin even(){
+  &:nth-child(even) {
+    @content
+  }
+}
+
+@mixin odd(){
+  &:nth-child(odd) {
+    @content
+  }
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+
+
+
+
+
+
+@mixin breakpoint($point) {
+  @if $point == bigmonitor {
+     @media (max-width: 1920px) { @content ; }
+  }
+  @else if $point == biglaptop {
+     @media (max-width: 1800px) { @content ; }
+  }
+   @else if $point == highlaptop {
+     @media (max-width: 1600px) { @content ; }
+  }
+  @else if $point == midlaptop {
+     @media (max-width: 1500px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (max-width: 1370px) { @content ; }
+  }
+   @else if $point == laptop-mini {
+     @media (max-width: 1200px) { @content ; }
+  }
+  @else if $point == laptop-low {
+     @media (max-width: 1100px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (max-width: 990px) { @content ; }
+  }
+  @else if $point == phablet-design {
+     @media (max-width: 770px)  { @content ; }
+  }
+   @else if $point == phablet {
+     @media (max-width: 768px)  { @content ; }
+  }
+    @else if $point == mobile-biglarge {
+     @media (max-width: 700px)  { @content ; }
+  }
+  @else if $point == mobile-large {
+     @media (max-width: 640px)  { @content ; }
+  }
+    @else if $point == mobile_big {
+     @media (max-width: 450px)  { @content ; }
+
+  }
+  @else if $point == mobile_small {
+     @media (max-width: 400px)  { @content ; }
+
+  }
+    @else if $point == mobile_mini {
+     @media (max-width: 360px)  { @content ; }
+
+  }
+}
+
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+@mixin animate($name, $duration, $iteration, $direction) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+     -moz-animation-iteration-count: $iteration;
+       -o-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+  -webkit-animation-direction: $direction;
+     -moz-animation-direction: $direction;
+       -o-animation-direction: $direction;
+          animation-direction: $direction;
+}
+
+
+
+// @mixin breakpoint($point) {
+//    @if $point == milaptop {
+//      @media (min-width: 1370px) { @content ; }
+//   }
+//    @else if $point == minlaptop-mini {
+//      @media (min-width: 1024px) { @content ; }
+//   }
+//     @else if $point == mintablet {
+//      @media (min-width: 990px) { @content ; }
+//   }
+//    @else if $point == minphablet {
+//      @media (min-width: 768px)  { @content ; }
+//   }
+//   @else if $point == minmobile-large {
+//      @media (min-width: 640px)  { @content ; }
+//   }
+//   @else if $point == minmobile_small {
+//      @media (min-width: 400px)  { @content ; }
+
+//   }
+// }

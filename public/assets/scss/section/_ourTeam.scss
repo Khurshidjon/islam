@@ -1,0 +1,91 @@
+/*===========================
+    Our Team 
+===========================*/
+.team-profile {
+    position: relative;
+    z-index: 1;
+}
+
+.team-social-btn a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: $transition;
+    color: $white;
+    &:hover{
+        background: $base-color;
+        color: $white;
+        border-color: $base-color;
+    }
+}
+.team-inner-top p{
+    color: $white;
+}
+.team-inner-top h4 {
+    text-transform: $upper;
+    letter-spacing: 2px;
+    color: $white;
+}
+.team-hover {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    z-index: 2;
+    color: #fff;
+    transition: $transition;
+}
+.team-details-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.team-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.team-profile:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $secendary-color;
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+.single-team-member{
+    overflow: hidden;
+}
+.team-member-name {
+    padding: 30px 0;
+    background: linear-gradient(to bottom, transparent 0%, $secendary-color 70%);
+    margin: -20px;
+}
+.single-team-member:hover {
+    .team-member-name {
+        padding: 0;
+        background: transparent;
+        margin: 0;
+    }
+    .team-profile:after{
+        visibility: visible;
+        opacity: .8;
+    }
+    .team-hover{
+        top: 0;
+    }
+    
+}
+.our-team-section {
+    padding-top: 86px;
+    padding-bottom: 120px;
+}

@@ -1,0 +1,64 @@
+/*===========================
+    Latest News 
+===========================*/
+.latest-news-section{
+    background: $third-color;
+    padding-top: 86px;
+    padding-bottom: 115px;
+    span.title-separetor img{
+        background: $third-color;
+    }
+    
+}
+.latest-news-left-post
+ .post-thumb {
+    height: auto;
+}
+
+.single-latest-news-list .post-thumb {
+    height: auto;
+}
+
+.single-latest-news-list {
+    position: relative;
+    margin-top: 30px;
+}
+
+.single-news-wrapper {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    h4{
+        text-transform: uppercase;
+    }
+}
+
+.latest-news-list-content h4 {
+    margin-top: 0;
+}
+.lattest-lefp-content-top {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 36px;
+    
+}
+
+.lattest-lefp-content-top h4 {
+    text-transform: $upper;
+}
+.latest-news-left-post-content{
+    .read-more {
+       padding-left: 20px; 
+    }
+}
+.latest-news-list-content {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.latest-news-list-content p{
+    margin-bottom: 0;
+}
+.right-latest-news-wrapper{
+    margin-top: -30px;
+}

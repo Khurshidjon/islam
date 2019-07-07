@@ -1,0 +1,196 @@
+/*===========================
+    Muslim Festival
+===========================*/
+.festival-menu ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+.festival-menu ul li {
+    list-style: none;
+    display: $d-inblock;
+    padding: 10px 30px;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    text-transform: $upper;
+    margin-left: -5px;
+    transition: $transition;
+}
+
+.festival-menu ul li:last-child {
+    border-right: none;
+}
+.festival-menu li.active,
+.festival-menu li:hover
+{
+    background: $base-color;
+    border: 1px solid $base-color;
+    color: $white;
+}
+.festival-menu li:first-child{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.festival-menu li:last-child{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.festival-menu ul{
+   border-radius: 25px;
+}
+/* muslim festival filter isotop css */
+.grid {
+  background: #DDD;
+  max-width: 100%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 25%;
+  height: 380px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.masonry-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: $transition;
+}
+.masony-bg-1{
+    background: url(../img/muslim-festival-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-2{
+    background: url(../img/muslim-festival-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-3{
+    background: url(../img/muslim-festival-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-4{
+    background: url(../img/muslim-festival-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-5{
+    background: url(../img/muslim-festival-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-6{
+    background: url(../img/muslim-festival-6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-7{
+    background: url(../img/muslim-festival-7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masony-bg-8{
+    background: url(../img/muslim-festival-8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masonry-image:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0268B2;
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: $transition;
+}
+.masonry-hover {
+    display: table;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.masonry-hover-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+
+.masonry-hover-content a {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: rgba(50, 56, 60,.8);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: $transition;
+    &:hover{
+        background: $base-color;
+        transform: rotate(360deg)scale(1.1);
+    }
+}
+
+.grid-item:hover .masonry-hover-content{
+    visibility: visible;
+    opacity: 1;
+}
+.grid-item:hover .masonry-image:after{
+    visibility: visible;
+    opacity: .8;
+}
+.grid-item:hover .masonry-image{
+    transform: scale(1.3) rotate(-14deg);
+}
+.festival-menu {
+    margin-bottom: 60px;
+}
+.muslim-festival {
+    padding-top: 86px;
+    padding-bottom: 120px;
+}
+.more-festival-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}

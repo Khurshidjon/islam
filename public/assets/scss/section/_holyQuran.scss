@@ -1,0 +1,75 @@
+/*===========================
+    Holy Quran Section 
+===========================*/
+.holy-quran-left:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $secendary-color;
+    content: "";
+    opacity: .6;
+    z-index: -1;
+}
+.holy-quran {
+    position: relative;
+}
+.holy-quran-bg{
+    background: url(../img/holy-quran-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.holy-quran-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 59%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.holy-quran-right-content {
+    margin-left: -15px;
+    margin-top: 106px;
+    margin-bottom: 115px;
+}
+.holy-quran-content h3 {
+    margin-top: 0;
+}
+  .audio-player h4 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.audio-player {
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 21%;
+    
+}
+.audiojs p{
+   margin-left: -5px;
+}
+.audiojs{
+    background: $base-color;
+}
+.audiojs .loaded{
+    background: #D9D9D9;
+}
+.audiojs .scrubber{
+    background: $secendary-color;
+}
+.audiojs .progress{
+    background: $white;
+}
+.holy-quran-right-content-wrapper
+{
+    background: $third-color;
+    span.title-separetor img{
+        background: $third-color;
+    }
+    
+}

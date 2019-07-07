@@ -1,0 +1,161 @@
+/*===========================
+    Shoping Cart Page 
+===========================*/
+.remove-icon i,
+.minus i,
+.plus i,
+.quant{
+    font-size: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+.minus,
+.plus{
+    display: inline-block;
+}
+.remove-icon i:focus,
+.minus i:focus,
+.plus i:focus,
+.quant:focus{
+    outline: none;
+}
+.q-price,
+.to-price{
+    font-weight: 600;
+    color: $base-color;
+}
+.quantity {
+    margin-top: -8px;
+}
+.table{
+    border: 1px solid #ddd;
+}
+.checkout-table.table>thead>tr>th{
+    border-bottom:1px solid #ddd;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th{
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+.chk-box-title h4 {
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-bottom: 0;
+}
+
+.chk-box-body {
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.get-a-quote-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.get-a-quote-form label {
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+.get-a-quote-form input[type=submit] {
+    border-radius: 25px;
+    color: $white;
+    background: $secendary-color;
+    font-weight: 400;
+    transition: $transition;
+    &:hover{
+        background: $base-color;
+        color: $white;
+    }
+}
+.cupon-form input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    width: 50%;
+    transition: $transition;
+}
+.cupon-form input[type=text]:focus{
+    border-color: $base-color;
+}
+.cupon-form input[type=submit]{
+    border-radius: 25px;
+    background: $secendary-color;
+    transition: $transition;
+    color: $white;
+    font-weight: 400;
+    &:hover{
+        background: $base-color;
+        color: $white;
+    }
+}
+.sub-total,
+.grand-total{
+    font-weight: 600;
+}
+
+.sub-total span, 
+.grand-total span {
+    float: right;
+    color: $base-color;
+}
+
+.chk-box-body button[type=button] {
+    display: inline-block;
+    background: $secendary-color;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: $white;
+    transition: $transition;
+    &:hover{
+        background: $base-color;
+        color: $white;
+    }
+}
+.checkout-page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.chk-button {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.checkout-table.table > thead > tr > th:nth-child(1) {
+    width: 2%;
+}
+.checkout-table.table > thead > tr > th:nth-child(2) {
+    width: 30%;
+}
+.checkout-table.table > thead > tr > th:nth-child(3) {
+    width: 10%;
+}
+.checkout-table.table > thead > tr > th:nth-child(4) {
+    width: 20%;
+}
+.checkout-table.table > thead > tr > th:nth-child(5) {
+    width: 10%;
+}
+.checkout-table.table > thead > tr > th:nth-child(6) {
+    width: 5%;
+}

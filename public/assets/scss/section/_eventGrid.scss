@@ -1,0 +1,92 @@
+/*===========================
+    Event Grid  
+===========================*/
+.event-search-wrapper {
+    background: $secendary-color;
+    padding: 20px;
+    color: $white;
+    text-align: center;
+    text-transform: $upper;
+}
+.event-search-wrapper
+ input[type=text] {
+    text-transform: $upper;
+    padding: 15px  ;
+    border-radius: 25px;
+}
+
+.event-search-wrapper
+ input[type=submit] {
+    margin-top: 30px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background: $base-color;
+}
+.event-search {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight{
+    border-color: $base-color;
+    background: $base-color;
+    color: $white;
+}
+.paginator {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.paginator li {
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: $third-color;
+    border-radius: 50%;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: $transition;
+}
+.paginator li a{
+    color: #777;
+}
+.paginator li.active,
+.paginator li:hover{
+    background: $base-color;
+    color: $white;
+}
+.paginator li.active a,
+.paginator li:hover a{
+    color: $white;
+}
+.upcoming-event-section .single-post-wrapper{
+    margin-top: 50px;
+}
+.upcoming-event-wrapper{
+    margin-top: -50px;
+}
+.upcoming-event-section {
+    padding-bottom: 120px;
+    padding-top: 86px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+    border: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 0;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: #fff;
+}
+.ui-state-default.ui-state-highlight {
+    background: #ddd;
+}
+.upcoming-event-section{
+    padding-top: 86px;
+}

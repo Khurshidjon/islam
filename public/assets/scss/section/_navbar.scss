@@ -1,0 +1,197 @@
+/*===========================
+    Navbar 
+===========================*/
+.navbar-section {
+    border-top: 5px solid $secendary-color;
+    border-bottom: 5px solid $base-color;
+    height: 124px;
+}
+.main-menu{
+    margin: 0;
+    padding: 0;
+    display: $d-block;
+}
+.main-menu li {
+    display: $d-inblock;
+    font-size: $font-size-base;
+    font-weight: $semi-bold;
+    position: relative;
+}
+.main-menu li a {
+    padding: 10px 5px;
+    text-transform: $upper;
+    font-size: $font-size-base;
+    font-weight: $semi-bold;
+}
+.logo {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: block;
+    margin-top:39px; 
+}
+.logo img{
+    max-width: 198px;
+}
+.boxed-btn.donate{
+    padding: 5px 15px;
+    font-size: 14px;
+    background: $base-color;
+    transition: $transition;
+    &:hover{
+        background: $secendary-color;
+    }
+}
+.main-menu, 
+.tools {
+    padding-top: 24px;
+}
+.shopping-icon {
+    position: relative;
+}
+
+.shopping-icon span {
+    position: absolute;
+    top: -15px;
+    right: -8px;
+    background: $base-color;
+    color: $white;
+}
+.main-menu li a{
+    position: relative;
+    transition: $transition;
+    transition-duration: .7s;
+    &:hover:after{
+        bottom: -15px;
+        visibility: visible;
+        opacity:1 ;
+    }
+}
+.main-menu li a:after {
+    position: absolute;
+    left: 35%;
+    bottom: -20px;
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid $base-color;
+    transition: $transition;
+    visibility: hidden;
+    opacity: 0;
+}
+.tools{
+    display: $d-inblock;
+    color: $base-color;
+    padding-right: 10px;
+}
+.tools a{
+    color: $base-color;
+    &:hover{
+        color: $secendary-color;
+    }
+}
+.main-menu li ul{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 220px;
+    text-align: left;
+    background: $white;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+.main-menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: matrix(10deg);
+}
+.sub-menu{
+    padding-left: 0;
+}
+.main-menu li ul li a {
+    padding: 10px 15px;
+    display: block;
+    transition: $transition;
+}
+
+.main-menu li ul li:hover a {
+    background: $secendary-color;
+    color: $white;
+}
+.main-menu li ul li:hover a:after{
+    visibility: hidden;
+    opacity: 0;
+}
+.main-menu li ul li {
+    display: block;
+}
+.main-menu li a i {
+    padding: 0;
+}
+.serach-element {
+    position: relative;
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    font-size: 25px;
+    color: $base-color;
+}
+
+.serach-element input[type=text] {
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: $white;
+    transition: $transition;
+    
+}
+.serach-element input[type=text]:focus{
+    border-color: $base-color;
+}
+.search-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    z-index: 99;
+    display: table;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+
+.search-box-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.search-box.active{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.1);
+}
+.search-close-btn i {
+    position: absolute;
+    right: 30%;
+    font-size: 25px;
+    top: 30%;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.search-close-btn i:hover {
+    opacity: .8;
+}

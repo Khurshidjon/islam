@@ -1,0 +1,82 @@
+/*===========================
+    Contact Page 
+===========================*/
+.map iframe{
+    height: 500px;
+    width: 100%;
+}
+.single-contact-box {
+    background: $white;
+    box-shadow: 0 0 5px #ddd;
+    padding: 20px;
+    position: relative;
+}
+
+.single-contact-box h4 {
+    text-transform: $upper;
+    margin-top: 29px
+}
+
+.single-contact-box a {
+    color: $base-color;
+    font-weight: 600;
+}
+
+.contact-icon i {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    background: $white;
+    text-align: center;
+    line-height: 60px;
+    display: $d-inblock;
+    border-radius: 50%;
+    color: $base-color;
+}
+
+.contact-icon {
+    position: absolute;
+    left: 0;
+    top: -31px;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: -117px;
+}
+.contact-form input[type=text], 
+.contact-form input[type=email],
+.contact-form input[type=tel], 
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    transition: $transition;
+    color: #777;
+}
+
+.contact-form input[type=submit] {
+    margin-top: 5px;
+    padding: 15px 35px;
+    border-radius: 25px;
+    color: $white;
+    background: $base-color;
+    transition: $transition;
+    &:hover{
+        background: $secendary-color;
+        color: $white;
+    }
+}
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form input[type=tel]:focus{
+    border-color: $base-color;
+    font-weight: 400;
+}
+.contact-form {
+    padding-top: 86px;
+    padding-bottom: 120px;
+}

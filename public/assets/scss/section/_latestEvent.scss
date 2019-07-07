@@ -1,0 +1,117 @@
+/*===========================
+    Latest Event 
+===========================*/
+.post-thumb{
+    height: 240px;
+    position: relative;
+}
+.event-post-bg-2{
+    background: url(../img/event-post.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-post-bg-1{
+    background: url(../img/event-post-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.single-event-list{
+    margin-top: 30px;
+    position: relative;
+    border-bottom: 1px solid $third-color;
+    padding-bottom: 41px;
+}
+
+.single-event-list.highlight {
+    background: $secendary-color;
+    padding: 20px;
+    .list-post-content h4,
+    .list-post-content p {
+        color: $white;
+    }
+    .list-post-content h4 {
+        margin-top: 0;
+    }
+    .list-post-content {
+    margin-left: 0px;
+    }
+    
+}
+.event-post-list {
+    margin-top: -30px;
+}
+.list-post-content p {
+    margin-bottom: 0;
+}
+.post-date {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: $base-color;
+    color: $white;
+    text-align: center;
+    padding-top: 3px;
+    text-transform: $upper;
+    left: 0;
+    bottom: 0;
+}
+.time {
+    display: inline-block;
+}
+
+.post-meta {
+    a,p{
+     font-size: 14px;
+     opacity: .8; 
+    }
+}
+.port-body{
+    .boxed-btn{
+       margin-top: 6px;
+    }
+}
+.list-post-thumb {
+    position: absolute;
+    display: $d-inblock;
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+}
+
+.list-post-content {
+    margin-left: 120px;
+}
+
+.list-post-content h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    transition: $transition;
+    &:hover{
+        color: $base-color;
+    }
+}
+.post-inner h3 {
+    margin-bottom: 14px;
+    text-transform: $upper;
+    transition: $transition;
+    cursor: pointer;
+    &:hover{
+        color: $base-color;
+    }
+}
+
+.post-meta .time {
+        margin-bottom: 18px;
+}
+.post-meta i{
+    padding-left: 0;
+}
+.post-meta p, .post-meta a {
+    padding-right: 10px;
+}
+.single-event-list:last-child {
+    border: none;
+}

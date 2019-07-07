@@ -1,0 +1,40 @@
+// Core variables and mixins
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+
+// Reset And Dependencies
+@import "main/_normalize";
+
+// Section CSS
+
+@import "section/_support-bar";
+@import "section/_navbar";
+@import "section/_header";
+@import "section/_event";
+@import "section/_pillarOfIslam";
+@import "section/_holyQuran";
+@import "section/_latestEvent";
+@import "section/_ourService";
+@import "section/_countSection";
+@import "section/_muslimFestival";
+@import "section/_ourCauses";
+@import "section/_ourTeam";
+@import "section/_latestNews";
+@import "section/_ourDonator";
+@import "section/_ourProduct";
+@import "section/_newsLetter";
+@import "section/_footer";
+@import "section/_aboutPage";
+@import "section/_blogDetails";
+@import "section/_contact";
+@import "section/_donate";
+@import "section/_eventGrid";
+@import "section/_eventList";
+@import "section/_login";
+@import "section/_shopDetails";
+@import "section/_shop";
+@import "section/_shoping-cart";
+@import "section/_singleCause";
+@import "section/_sermons";
+@import "section/_preloader";

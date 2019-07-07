@@ -1,0 +1,108 @@
+/*===========================
+    Event Page 
+===========================*/
+.event-counter {
+    background: $secendary-color;
+    color: $white;
+    padding-top: 64px;
+    padding-bottom: 94px;
+}
+.event-details h3 {
+    color: $white;
+    text-transform: $upper;
+    margin-top: 0;
+}
+.event-details p {
+    color: $white;
+}
+.count-text {
+    font-size: 70px;
+}
+.countdown-box h5 {
+    color: #fff;
+    text-transform: $upper;
+}
+.event-counter p {
+    color: #fff;
+    font-size: $small-font-size;
+    margin-top: 10px;
+}
+.countdown {
+  display: table-cell;
+  font-weight: normal;
+}
+.countdown .item {
+  display: $d-inblock;
+  vertical-align: bottom;
+  position: relative;
+  font-weight: $bold-weight;
+  font-size: 81px;
+  line-height: 120px;
+  text-align: center;
+  color: $third-color;
+  border-radius: 10px;
+  padding: 0 10px;
+  background: $base-color;
+  background: -moz-linear-gradient(top, #0268b2 0%, #012d4d 100%);
+  background: -webkit-linear-gradient(top, #0268b2 0%,#012d4d 100%);
+  background: linear-gradient(to bottom, #0268b2 0%,#012d4d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0268b2', endColorstr='#012d4d',GradientType=0 );
+  margin-right: 15px;
+  width: 140px;
+}
+.countdown .item:after {
+  content: '';
+  display: $d-block;
+  height: 1px;
+  border-top: 3px solid $secendary-color;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+span.separator {
+    display: none;
+}
+.countdown .label {
+  text-transform: $upper;
+  display: $d-block;
+  position: absolute;
+  font-weight: $bold-weight;
+  line-height: normal;
+  right: 6px;
+  bottom: 4px;
+  font-size: $font-size-base;
+  color: #B9B9B9;
+}
+.countdown .item-hh .label,
+.countdown .item-mm .label,
+.countdown .item-ss .label ,
+.countdown .item-dd .label ,
+{ 
+    font-size: 20px;
+    position: absolute;
+    bottom: -40px;
+    color: $white;
+    left: 0;
+}
+span.sp-line {
+    position: absolute;
+    background: $white;
+    width: 100%;
+    height: 1px;
+    content: "";
+    top: 39px;
+}
+.event-details {
+    position: relative;
+}
+.event-details p {
+    margin-bottom: 0;
+}
+.event-counter a {
+    color: $white;
+}
+.latest-event {
+    padding-top: 86px;
+    padding-bottom: 120px;
+}

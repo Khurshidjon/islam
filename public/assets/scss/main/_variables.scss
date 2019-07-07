@@ -1,0 +1,76 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+$base-color: #0268B2;
+$secendary-color: #32383C;
+$third-color: #F5F5F5;
+$fourth-color: #264863;
+
+
+$white: #fff;
+
+$black: #000000;
+
+.line_ {
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-style: dashed;
+  position: absolute;
+  left: 1185px;
+  top: 572px;
+  width: 348px;
+  height: 0;
+  z-index: 299;
+}
+
+
+//== Typography
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700');
+
+$font-family-mon: 'Montserrat', sans-serif;
+$font-family-lato: 'Lato', sans-serif;
+
+$font-size-base:          16px !default;
+
+$font-size-h1:            48px !default; 
+$font-size-h2:            36px !default; 
+$font-size-h3:            24px !default; 
+$font-size-h4:            21px !default; 
+$font-size-h5:            18px !default; 
+$font-size-h6:            16px !default; 
+
+$small-font-size: 14px; 
+
+$normal-weight:400;
+$semi-bold:500;
+$bold-weight:700;
+$extra-bold-weight:800;
+
+$upper : uppercase;
+$cap : capitalize;
+
+$t-center:center;
+$t-left:left;
+$t-right:right;
+
+$d-block:block;
+$d-inblock:inline-block;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.7 !default; // 24/15
+
+
+
+// border-radius
+$border-radius-base:        2px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       1px !default;
+
+
+//  transition
+$transition: all .5s ease-in-out;
+$transition1: all .9s ease-in-out;
+

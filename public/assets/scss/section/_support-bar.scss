@@ -1,0 +1,138 @@
+/*===========================
+    Support Bar 
+===========================*/
+.support-bar-wrapper {
+    display: $d-block;
+    background: $secendary-color;
+    font-size: $small-font-size;
+    color: $white;
+    height: 45px;
+    padding-top: 5px;
+    text-align: $t-center;
+    border-bottom-left-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+}
+
+.support-content a {
+    color: $white;
+    display: $d-inblock;
+}
+
+.support-social {
+    display: $d-inblock;
+}
+
+.support-content {
+    display:$d-inblock;
+    margin-left: 5px;
+}
+.support-social i {
+    font-size: 16px;
+    transition: $transition;
+    &:hover{
+        color: $base-color;
+    }
+}
+.support-bar-wrapper {
+    position: relative;
+}
+.azan-time-bg{
+    background: url(../img/azan-time-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.azan-time {
+    z-index: 99;
+    padding-top: 34px;
+    padding-bottom: 140px;
+    border: 5px solid $secendary-color;
+    position: fixed;
+    left: 48%;
+    top: 65px;
+    width: 550px;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+.azan-time.active{
+    visibility: visible;
+    opacity: 1;
+}
+.azan-time.active .azan-time-header:after{
+    visibility: visible;
+    opacity: 1;
+}
+.azan-time-header h4 {
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 10px;
+}
+
+.azan-time-body {
+    display: inline-block;
+    width: 400px;
+    margin-left: 85px;
+}
+
+.azan-time-header {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 21px;
+}
+span.azan-day {
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.azan-time-body table
+ tr td {
+    text-align: center;
+    padding: 10px 15px;
+    color: $white;
+}
+
+.azan-time-body table
+ th {
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+     color: $white;
+}
+.overlay-bg {
+    background: $secendary-color;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+    
+}
+.overlay-bg.active{
+    opacity: .8;
+    visibility: visible;
+}
+.azan-time-header {
+    position: relative;
+}
+
+.azan-time-header:after {
+    position: absolute;
+    left: 30px;
+    top: -49px;
+    width: 20px;
+    height: 10px;
+    content: '';
+    border-bottom: 10px solid $secendary-color;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}

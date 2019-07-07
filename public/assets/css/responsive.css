@@ -1,0 +1,959 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+   /*slick nav */
+    .slicknav_menu{
+        display: none;
+    }
+    /*support section*/
+    .support-content a {
+    font-size: 11px;
+    }
+    #azan-btn {
+        font-size: 11px;
+    }
+    .support-content {
+        margin-left: 0;
+    }
+    .support-social i {
+        font-size: 11px;
+    }
+    /*azan popup*/
+    .azan-time {
+    width: 480px;
+    }
+
+    .azan-time-body {
+        margin-left: 23px;
+    }
+    .azan-time-body table
+    tr td {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .azan-time-header {
+        padding-top: 0;
+    }
+    .azan-time-header h4 {
+        font-size: 16px;
+    }
+    .azan-time-header span,
+    .azan-time-body table th{
+        font-size: 14px;
+    }
+    .azan-time.active .azan-time-header:after {
+        top: -59px;
+    }
+    /*main menu*/
+    .main-menu li a {
+    font-size: 12px;
+    }
+
+    .boxed-btn.donate {
+        font-size: 11px;
+    }
+
+    .tools {
+        padding-right: 0;
+    }
+    .search-close-btn i {
+    right: 18%;
+    }
+    .main-menu li a:hover:after{
+        bottom: -17px;
+    }
+    /*header section*/
+    .single-header-carousel h1 {
+    font-size: 70px;
+    }
+
+    .static-header-img {
+        width: 40%;
+    }
+    .header-carousel-active .owl-dots {
+        left: 9%;
+    }
+    .event-details h3 {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .countdown .item {
+        padding: 0;
+        width: 115px;
+        font-size: 71px;
+    }
+
+    .event-counter a {
+        font-size: 11px;
+    }
+    .holy-quran-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .audio-player {
+        margin-left: 17%;
+        margin-top: 45%;
+    }
+
+    .latest-event {
+        padding-bottom: 7px;
+    }
+
+    .our-srvice-right-img {
+        width: 50%;
+    }
+
+    .our-service {
+        padding-bottom: 74px;
+    }
+
+    .count-sectoin h4 {
+        font-size: 18px;
+    }
+
+    .our-causes {
+        padding-bottom: 56px;
+    }
+
+    .team-member-name {
+        margin: -30px;
+    }
+
+    .single-latest-news-list {
+        margin-top: 90px;
+    }
+
+    .right-latest-news-wrapper {
+        margin-top: -90px;
+    }
+    span.title-separetor {
+        width: 200px;
+    }
+    .widget-four-body li {
+        width: 30%;
+    }
+    .cupon-form input[type=submit] {
+        margin-left: 43%;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .chk-box-body button[type=button] {
+        font-size: 13px;
+    }
+    .product-main-thumb {
+        float: right;
+        width: 320px;
+    }
+
+    .single-review-box {
+        min-height: 180px;
+    }
+    .single-contact-box p {
+    font-size: 14px;
+}
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    ul#main-menu,
+    .tools,
+    .static-header-img{
+        display: none;
+    }
+
+     /*slick nav */
+    .slicknav_menu{
+        display: block;
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: none;
+    }
+
+    .slicknav_menu {
+        background: transparent;
+        position: absolute;
+        right: 3%;
+        top: 6%;
+        z-index: 9;
+        width: 94%;
+        text-align: center;
+    }
+    .slicknav_btn {
+        background: transparent;
+        text-shadow: none;
+        margin-bottom: 24px;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        background: #000;
+        box-shadow: none;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+    .slicknav_menu.nav-fixed {
+        position: fixed;
+        z-index: 99;
+    }
+    .slicknav_nav {
+        width: 100%;
+    }
+    ul.slicknav_nav {
+        background: #32383C;
+    }
+    li.slicknav_collapsed.slicknav_parent a i {
+        display: none;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+        margin: 0;
+        border-radius: 0;
+
+    }
+    .slicknav_nav a:hover,
+    .slicknav_nav .slicknav_row:hover{
+        background: #0268B2;
+        color: #fff;
+    }
+    .slicknav_btn.slicknav_open {
+        transform: rotate(30deg);
+    }
+    .slicknav_btn .slicknav_icon-bar{
+        transition: .3s;
+    }
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:first-child {
+        display: none;
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(2) {
+        transform: rotate(110deg);
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(3) {
+        transform: rotate(9deg);
+        margin-top: -7px;
+    }
+    /*support section*/
+    .support-content a {
+    font-size: 11px;
+    }
+    #azan-btn {
+        font-size: 11px;
+    }
+    .support-content {
+        margin-left: 0;
+    }
+    .support-social i {
+        font-size: 11px;
+    }
+    /*azan popup*/
+    .azan-time {
+    width: 480px;
+    }
+
+    .azan-time-body {
+        margin-left: 23px;
+    }
+    .azan-time-body table
+    tr td {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .azan-time-header {
+        padding-top: 0;
+    }
+    .azan-time-header h4 {
+        font-size: 16px;
+    }
+    .azan-time-header span,
+    .azan-time-body table th{
+        font-size: 14px;
+    }
+    .azan-time.active .azan-time-header:after {
+        top: -59px;
+    }
+   .boxed-btn.donate {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .azan-time {
+        left: 19%;
+    }
+    .header-carousel-active .owl-dots {
+        left: 2%
+    }
+    .event-details {
+        margin-bottom: 40px;
+    }
+    .slicknav_nav .slicknav_item a i {
+        display: none;
+    }
+    .countdown .item {
+        width: 115px;
+        font-size: 70px;
+    }
+
+    .countdown .item-hh .label, .countdown .item-mm .label, 
+    .countdown .item-ss .label, .countdown .item-dd .label {
+        text-align: left;
+    }
+    ul.pillar-of-islam li:first-child {
+        left: 3%;
+        bottom: 33%;
+    }
+    ul.pillar-of-islam li:last-child {
+        right: 3%;
+        bottom: 33%;
+    }
+    ul.pillar-of-islam li:last-child:after {
+        right: 85%;
+        bottom: 0%;
+        transform: rotate(160deg);
+    }
+    ul.pillar-of-islam li:nth-child(2) {
+        left: 10%;
+        top: -20%;
+    }
+    ul.pillar-of-islam li:nth-child(4) {
+        right: 10%;
+        top: -20%;
+    }
+    ul.pillar-of-islam li:nth-child(3) {
+        left: 50%;
+        top: -53%;
+        margin-left: -60px;
+    }
+    .circle{
+        padding-top: 30px;
+        width: 350px;
+        height: 350px;
+        padding: 15px;
+    }
+    .circle p {
+        font-size: 14px;
+    }
+    .audio-player {
+        margin-left: 10%;
+        margin-top: 70%;
+    }
+    .audiojs{
+        width: 350px;
+    }
+    .audiojs .scrubber{
+        width: 210px;
+    }
+    .audiojs .time{
+        margin-left: -2px;
+    }
+    .event-post-list {
+        margin-top: 60px;
+    }
+    .our-srvice-right-img {
+        display: none;
+    }
+    .single-counter-box {
+        margin-top: 40px;
+    }
+
+    .count-sectoin {
+        padding-top: 80px;
+    }
+    .festival-menu ul li{
+        padding: 10px 20px;
+    }
+    .grid-item{
+        width: 50%;
+    }
+    .cause-right {
+        padding-top: 0px; 
+        padding-bottom: 40px;
+    }
+    .cause-right-top h4{
+        font-size: 18px;
+    }
+    .single-team-member{
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    .our-team-section{
+        padding-bottom: 80px;
+    }
+    .latest-news-left-post
+     .post-thumb img {
+        min-width: 100%;
+    }
+
+
+    .lattest-lefp-content-top {
+        padding-left: 0;
+    }
+
+    .latest-news-left-post-content .read-more {
+        padding-left: 0;
+    }
+
+    .left-post-wrapper {
+        padding-bottom: 60px;
+    }
+    .product-carousel.owl-carousel {
+        padding-left: 8%;
+    }
+    .widget-three-wrapper,.widget-four-wrapper {
+        padding-top: 40px;
+    }
+
+    .widget-three-wrapper
+    .widget-title h4 {
+        text-align: left;
+        padding-left: 58px;
+    }
+    .copyright-area p,.copyright-area a {
+        font-size: 13px;
+    }
+    .about-us-image img {
+        min-width: 100%;
+        
+    }
+    .about-us-image{
+        margin-bottom: 30px;
+    }
+    .about-box-sections h4 {
+        padding-top: 30px;
+    }
+    .comment-form {
+        margin-bottom: 60px;
+    }
+    .donate-amount li{
+        margin-right: 3px;
+    }
+    .single-chk-box {
+        margin-bottom: 60px;
+    }
+
+    .checkout-page {
+        padding-bottom: 60px;
+    }
+    
+    .checkout-table.table > thead > tr > th:nth-child(4) {
+        width: 50%;
+    }
+    .event-search-wrapper input[type=submit] {
+        display: block;
+    }
+    .event-search-wrapper label {
+        text-align: left;
+        display: block;
+        padding: 20px;
+    }
+    .single-event-list-box h3 {
+        margin-top: 30px;
+    }
+    .prog-item{
+        z-index: 1;
+    }
+    .single-causes-item.single-page .cause-thumb img {
+        min-width: 100%;
+    }
+    .single-causes-item.single-page {
+        margin-bottom: 40px;
+    }
+
+    .recent-causes {
+        padding-bottom: 80px;
+    }
+    .single-review-box {
+        min-height: 210px;
+    }
+    .single-contact-box h4 {
+        font-size: 18px;
+    }
+
+    .single-contact-box p {
+        font-size: 10px;
+    }
+
+    .single-contact-box a {
+        font-size: 13px;
+    }
+    .cause-right-bottom .boxed-btn {
+        font-size: 12px;
+    }
+    .logo img {
+        max-width: 150px;
+    }
+    .holy-quran-right-content {
+        margin-left: -50px;
+    }
+    .product-carousel .owl-nav div{
+        left: 0;
+    }
+    .product-carousel .owl-nav div.owl-next{
+        right: 0;
+    }
+    .footer-menu a{
+        text-align: left;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+   .support-content {
+        display: none;
+    }
+
+    .support-bar-wrapper {
+        position: absolute;
+        left: 0;
+        top: -100px;
+        width: 100%;
+    }
+
+    .main-menu,.tools {
+        display: none;
+    }
+
+    #azan-btn {
+        margin-left: -55%;
+    }
+
+    .boxed-btn.donate {
+        position: absolute;
+        right: 20px;
+        top: -96px;
+    }
+
+
+    .logo {
+        padding-top: 20px;
+    }
+    /*slick nav */
+    .slicknav_menu{
+        display: block;
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: none;
+    }
+
+    .slicknav_menu {
+        background: transparent;
+        position: absolute;
+        right: 3%;
+        top: 12%;
+        z-index: 9;
+        width: 94%;
+        text-align: center;
+    }
+    .slicknav_btn {
+        background: transparent;
+        text-shadow: none;
+        margin-bottom: 24px;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        background: #000;
+        box-shadow: none;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+    .slicknav_menu.nav-fixed {
+        position: fixed;
+        z-index: 99;
+    }
+    .slicknav_nav {
+        width: 100%;
+    }
+    ul.slicknav_nav {
+        background: #32383C;
+    }
+    li.slicknav_collapsed.slicknav_parent a i {
+        display: none;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+        margin: 0;
+        border-radius: 0;
+
+    }
+    .slicknav_nav a:hover,
+    .slicknav_nav .slicknav_row:hover{
+        background: #0268B2;
+        color: #fff;
+    }
+    .slicknav_btn.slicknav_open {
+        transform: rotate(30deg);
+    }
+    .slicknav_btn .slicknav_icon-bar{
+        transition: .3s;
+    }
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:first-child {
+        display: none;
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(2) {
+        transform: rotate(110deg);
+    }
+
+    .slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(3) {
+        transform: rotate(9deg);
+        margin-top: -7px;
+    }
+    .slicknav_item.slicknav_row i,
+    .static-header-img,
+    .pillar-of-islam-section,
+    .our-srvice-right-img,
+    .product-carousel .owl-nav,
+    .holy-quran-left{
+        display: none;
+    }
+    .single-header-carousel h1 {
+        font-size: 36px;
+    }
+
+    .header-carousel-active .owl-dots {
+        left: 4%;
+    }
+    .event-details {
+        margin-bottom: 35px;
+    }
+    .countdown .item {
+        margin-bottom: 60px;
+    }
+    .news-letter-wrapper input[type="email"] {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .news-letter-wrapper input[type="submit"] {
+        display: block;
+        left: 0;
+        width: 100%;
+        top: 63px;
+    }
+
+    .news-letter-wrapper {
+        padding-bottom: 131px;
+    }
+
+    .copyright-area p {
+        font-size: 9px;
+    }
+
+    .footer-menu {
+        font-size: 9px;
+        padding-top: 10px;
+    }
+
+    .widget-two-wrapper, .widget-three-wrapper,.widget-four-wrapper {
+        margin-top: 40px;
+    }
+
+    .single-latest-news-list .post-thumb img {
+    }
+
+    .single-news-wrapper {
+        left: 0;
+        position: inherit;
+        padding-top: 20px;
+    }
+
+    .right-latest-news-wrapper {
+        padding-top: 30px;
+    }
+    .holy-quran-right-content {
+        margin-left: 0;
+    }
+    .event-counter-links {
+        text-align: center;
+    }
+    .single-post-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .event-post-list {
+        padding-top: 1px;
+    }
+
+    section.latest-event {
+        padding-bottom: 7px;
+    }
+
+    .single-counter-box {
+        margin-bottom: 30px;
+    }
+
+    .count-sectoin {
+        padding-bottom: 90px;
+    }
+
+    .cause-right {
+        margin-left: 15px;
+    }
+
+    .cause-right-social-icon {
+    }
+
+    .cause-right-bottom .boxed-btn {
+        display: block;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    .cause-right-social-icon {
+        display: none;
+    }
+
+    .single-causes-item .cause-right {
+        padding-bottom: 0;
+    }
+
+    section.our-causes {
+        padding-bottom: 10px;
+    }
+    .single-team-member {
+        margin-bottom: 30px;
+    }
+
+    .our-team-section {
+        padding-bottom: 90px;
+    }
+    .azan-time.azan-time-bg {
+        width: 264px;
+        left: 7%;
+    }
+
+    .azan-time-header h4, .azan-time-header span {
+        font-size: 14px;
+    }
+
+    .azan-time-body {
+        margin-left: 0;
+        width: 250px;
+    }
+
+    .azan-time-body table
+    tr td {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .azan-time-header {
+        padding-top: 0;
+    }
+
+    .azan-time-header:after {
+        top: -58px;
+    }
+    .festival-menu ul li {
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .festival-menu li:first-child,
+    .festival-menu li:last-child {
+        border-radius: 0;
+    }
+
+    .festival-menu li:last-child {
+        border-right: 1px solid #ddd;
+    }
+    .grid-item{
+        width: 100%;
+    }
+    .festival-menu ul{
+        border: none;
+    }
+    .about-us-image{
+        margin-bottom: 20px;
+    }
+    .blog-post-meta p {
+        margin-bottom: 0;
+    }
+
+    .blog-post-meta {
+        padding-bottom: 40px;
+    }
+
+    .comments-wrapper p {
+        font-size: 12px;
+    }
+
+    .single-comment-wrapper {
+        min-height: 220px;
+    }
+
+    .single-comment-wrapper.reply-comment {
+        padding-left: 10px;
+    }
+
+    .single-comment-wrapper.reply-comment .comments-wrapper {
+        margin-left: 10px;
+    }
+
+    .comment-form {
+        padding-bottom: 40px;
+    }
+    .donate-amount li input[type=text] {
+        width: 70%;
+        margin-left: -85px;
+    }
+
+    .donate-amount li {
+        margin-bottom: 30px;
+    }
+
+    .payment-logo img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+    .checkout-table.table > thead > tr:nth-child(2) {
+        display: none;
+    }
+
+    tr.ch-pdt-details td:nth-child(2),
+    tr.ch-pdt-details td:nth-child(4),
+    tr.ch-pdt-details td:nth-child(5),
+    .checkout-table.table > thead > tr > th:nth-child(2),
+    .checkout-table.table > thead > tr > th:nth-child(4),
+    .checkout-table.table > thead > tr > th:nth-child(5){
+        display: none;
+    }
+     .chk-button {
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .single-chk-box {
+        margin-bottom: 30px;
+    }
+
+    .cupon-form input[type=text] {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .chk-box-body button[type=button],
+    .chk-button,
+    .get-a-quote-form input[type=submit],
+    .cupon-form input[type=submit]{
+        font-size: 13px;
+    }
+    .checkout-table.table > thead > tr > th {
+        font-size: 12px;
+    }
+    .paginator li{
+        margin: 0;
+    }
+    .single-event-list-box .post-inner h3 {
+        margin-top: 20px;
+    }
+    .single-cause-thumb img {
+        min-height: 200px;
+    }
+
+    .prog-item {
+        z-index: 1;
+    }
+
+    .cause-amount-collected .boxed-btn {
+        display: block;
+        text-align: center;
+    }
+
+    .cause-amount-collected {
+        border: none;
+    }
+
+    .single-causes .single-cause-content {
+        padding: 15px;
+    }
+
+    ul.single-cause-ul {
+        padding-left: 0;
+    }
+
+    ul.single-cause-ul li {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .recent-causes {
+        padding-bottom: 99px;
+    }
+    #sorting {
+        margin-bottom: 20px;
+    }
+
+    #sorting_two {
+        margin-bottom: 20px;
+    }
+    .product-thumbnail {
+        display: none;
+    }
+
+    .product-main-thumb {
+        margin-left: 0;
+    }
+
+    .product-specification li {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .product-buy input[type=submit] {
+        margin-left: 0;
+    }
+
+    .product-buy input[type=number] {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .product-details-bottom p:first-child {
+        padding-left: 10px;
+    }
+
+    .product-details-bottom span {
+        display: none;
+    }
+
+    .product-details-bottom span:first-child {
+        display: inline-block;
+    }
+
+    .product-share-links {
+        padding-left: 10px;
+    }
+    
+    .product-details-tabs ul.nav.nav-tabs li {
+        display: block;
+        width: 100%;
+    }
+    .single-review-box p {
+        font-size: 12px;
+    }
+
+    .review-text {
+        position: inherit;
+        margin-left: 0;
+    }
+
+    .single-review-box {
+        margin-bottom: 30px;
+    }
+
+    .reviewer-image {
+        margin-bottom: 20px;
+    }
+    .single-contact-box {
+        margin-bottom: 60px;
+    }
+}
+/* Wide Mobile Layout: 375px. */
+@media only screen and (max-width: 414px) {
+ 
+}
+@media screen and (max-width: 600px) {
+ 
+}

@@ -1,0 +1,126 @@
+.blank-btn {
+    display: $d-inblock;
+    padding: 5px 20px;
+    color: $white;
+    border: 1px solid rgba(2, 104, 178,.3);
+    border-radius: 25px;
+    text-transform: $upper;
+    font-size: $small-font-size;
+    transition: $transition;
+    margin-left: 2px;
+    &:hover{
+        color: $white;
+    }
+}
+
+.separetor,
+i{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.boxed-btn {
+    display: $d-inblock;
+    padding: 10px 20px;
+      background: $base-color;
+  background: -moz-linear-gradient(top, #0268b2 0%, #012d4d 100%);
+  background: -webkit-linear-gradient(top, #0268b2 0%,#012d4d 100%);
+  background: linear-gradient(to bottom, #0268b2 0%,#012d4d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0268b2', endColorstr='#012d4d',GradientType=0 );
+    border-radius: 25px;
+    color: $white;
+    transition: $transition;
+    transition-delay: .3s;
+    text-transform: $upper;
+    &:hover{
+        background: $secendary-color;
+background: -moz-linear-gradient(top, #32383c 0%, #0b0d0e 100%);
+background: -webkit-linear-gradient(top, #32383c 0%,#0b0d0e 100%);
+background: linear-gradient(to bottom, #32383c 0%,#0b0d0e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32383c', endColorstr='#0b0d0e',GradientType=0 );
+        color: $white;
+    }
+}
+.section-title h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+span.title-separetor {
+    position: relative;
+    height: 3px;
+    width: 250px;
+    background: $secendary-color;
+    display: $d-inblock;
+    margin-bottom: 60px;
+}
+
+span.title-separetor img {
+    position: absolute;
+    left: 50%;
+    top: -11px;
+    margin-left: -28px;
+    padding: 0 10px;
+    background: $white;
+}
+.section-title h2 span{
+    color: $base-color;
+    font-weight: $extra-bold-weight;
+}
+.color{
+    color: $base-color;
+}
+.breadcumb-bg{
+    background: url(../img/breadcumb-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.breadcumb-section{
+    position: relative;
+    z-index: 1;
+    padding-top: 32px;
+    padding-bottom: 53px;
+}
+.breadcumb-section:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $secendary-color;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .9;
+    z-index: -1;
+}
+.breadcumb-section h1,
+.breadcumb-section p,
+.breadcumb-section a{
+    color: $white;
+    margin-bottom: 0;
+}
+.scroll-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 67px;
+    width: 30px;
+    height: 30px;
+    background: #0268B2;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9;
+}
+.scroll-to-top i {
+    color: $white;
+}
+.navbar-section.nav-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 124px;
+    z-index: 9;
+    background: #fff;
+}
+/*slick nav disable*/
+.slicknav_menu{
+display: none;
+}

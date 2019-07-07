@@ -1,0 +1,82 @@
+/*===========================
+    About Page 
+===========================*/
+.about-us-image {
+    position: relative;
+}
+.about-us-image:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $secendary-color;
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+}
+
+.hover-icon {
+    position: absolute;
+    color: $white;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hover-icon i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: $base-color;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+.about-us-image:hover .hover-icon i
+{
+    opacity: 1;
+    visibility: visible;
+}
+.about-us-image:hover:after{
+    opacity: .8;
+    visibility: visible;
+}
+.about-page-section h3,
+.about-page-section h4{
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.about-page-section h3 span,
+.about-page-section h4 span{
+    color: $base-color;
+}
+
+.about-page-section ul li i {
+    color: $base-color;
+}
+.about-page-section p {
+    color: #777;
+}
+.about-box-sections {
+    padding-top: 51px;
+}
+.about-page-section {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+.hover-icon a {
+    color: #fff;
+}

@@ -1,0 +1,52 @@
+/*===========================
+    Our Service 
+===========================*/
+.our-service{
+    background: $third-color;
+    position: relative;
+    padding: 87px 0;
+    span.title-separetor img{
+        background:$third-color; 
+    }
+}
+.our-srvice-right-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.single-service-item {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.service-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: $secendary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-content {
+    margin-left: 130px;
+}
+
+.service-content h3 {
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.service-content p {
+    margin-bottom: 0;
+}
+.service-icon i {
+    font-size: 30px;
+    color: $white;
+}
+.service-content h3{
+    text-transform: $upper;
+}

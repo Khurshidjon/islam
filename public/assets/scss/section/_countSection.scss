@@ -1,0 +1,75 @@
+/*===========================
+    Count Section 
+===========================*/
+.count-section-bg{
+    background: url(../img/count-section-bg.jpg);
+}
+.count-sectoin{
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    color: $white;
+}
+.count-sectoin:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $secendary-color;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    opacity: .9;
+}
+.count-sectoin h4{
+    color: $white;
+}
+.single-counter-box {
+    padding: 30px;
+    z-index: 1;
+    position: relative;
+    transition: $transition;
+}
+.single-counter-box:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    content: "";
+    opacity: .3;
+    z-index: -1;
+}
+.count-icon{
+    font-size: 60px
+}
+.count-number {
+    font-size: 30px;
+}
+.count-sectoin{
+    padding: 120px 0;
+}
+.single-counter-box:hover{
+    background: $base-color;
+    animation: fade 1s ease-in ;
+}
+@keyframes fade{
+    0%{
+        transform: rotateY(10deg);
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}

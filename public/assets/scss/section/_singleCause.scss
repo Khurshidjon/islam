@@ -1,0 +1,51 @@
+/*===========================
+    Single Cause 
+===========================*/
+.single-page .cause-amount{
+    border: 1px solid #ddd;
+}
+.single-page .cause-right{
+    padding: 0;
+}
+.single-page .cause-right-top h4 {
+    line-height: 1.6;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+.single-causes-item.single-page {
+    margin-top: 0;
+}
+.cause-amount-collected {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 34px;
+}
+
+
+.cause-amount-collected .boxed-btn {
+    margin-top: 24px;
+}
+.single-cause-thumb {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.single-cause-content {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+ul.single-cause-ul {
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+ul.single-cause-ul li
+ i {
+    color: $base-color;
+}
+.recent-causes {
+    padding-top: 86px;
+    padding-bottom: 120px;
+}
+.single-causes {
+    padding-top: 120px;
+}

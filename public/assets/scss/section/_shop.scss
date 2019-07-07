@@ -1,0 +1,100 @@
+/*===========================
+    Shop Page 
+===========================*/
+.category-widget .widget-body li a span {
+    float: right;
+}
+#range .ui-state-default, 
+#range .ui-widget-content .ui-state-default, 
+#range .ui-widget-header .ui-state-default,
+#range .ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active{
+    border: 5px solid #BDD9F9;
+    background: $base-color;
+    font-weight: normal;
+    color: #454545;
+    border-radius: 50%;
+}
+#range .ui-widget-content .ui-state-default:focus{
+    outline: none;
+}
+
+#range .ui-widget-header{
+    background: $base-color;
+}
+.ui-slider-horizontal {
+    height: 8px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -7px;
+    margin-left: -1px;
+}
+.range-widget .widget-body p{
+  padding-top: 27px;  
+}
+#min,#max{
+    font-weight: 600;
+}
+.range-widget input[type=submit] {
+    background: $base-color;
+    padding: 15px 35px;
+    border-radius: 25px;
+    color: $white;
+    transition: $transition;
+    &:hover{
+        background: $secendary-color;
+        color: $white;
+    }
+}
+.advertise-widget {
+    margin-bottom: 40px;
+}
+.single-latest-product {
+    position: relative;
+    margin-top: 30px;
+}
+.single-latest-product-wrapper{
+     margin-top: -30px;
+}
+.latest-post-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 100px;
+}
+
+.latest-post-content
+ h4 {
+    margin: 0;
+}
+
+.latest-post-content p {
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+.single-product-box {
+    margin-top: 30px;
+}
+.shop-view-page{
+   margin-top: -30px; 
+}
+.our-product-section.shop-page{
+    padding-top: 44px;
+}
+.shop-page {
+    padding-top: 120px;
+}
+.shop-page .sidebar .widget-title,
+.shop-page .sidebar .widget-body{
+    background: $white;
+}
+.sorting-area select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.sorting-area {
+    margin-left: 15px;
+}
